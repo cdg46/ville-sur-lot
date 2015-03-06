@@ -1,0 +1,72 @@
+########################################
+#### BACKENDLAYOUT: ACCUEIL ####
+########################################
+mod {
+	web_layout {
+		BackendLayouts {
+			accueil{
+				title = accueil
+				config {
+					backend_layout {
+						colCount = 2
+						rowCount = 3
+						rows {
+							1 {
+								columns {
+									1 {
+										name = news_slider
+										colPos = 4
+										colspan = 2
+									}
+								}
+							}
+							2 {
+								columns {
+									1 {
+										name = content
+										colPos = 0
+										colspan = 2
+									}
+									2 {
+										name = colD
+										colPos = 2
+										colspan = 1
+									}
+								}
+							}
+							3 {
+								columns {
+									1 {
+										name = expo
+										colPos = 30
+										colspan = 2
+									}
+									2 {
+										name = local
+										colPos = 31
+										colspan = 2
+									}
+								}
+							}
+							4 {
+								columns {
+									1 {
+										name = contact
+										colPos = 1
+										colspan = 2
+									}
+									2 {
+										name = partenaires
+										colPos = 3
+										colspan = 1
+									}
+								}
+							}
+						}
+					}
+				}
+				icon = EXT:ville-sur-lot/Resources/Public/Images/BackendLayouts/accueil.gif
+			}
+		}
+	}
+}

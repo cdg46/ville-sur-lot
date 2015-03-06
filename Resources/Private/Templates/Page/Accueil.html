@@ -1,0 +1,39 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div class="container">   
+        <div class="row">
+                <div class="col-md-12">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '4'}" />
+                </div>
+		</div>
+        <div class="row">
+			<div class="col-md-9">
+				<div class="row">
+					<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '30'}" />
+					</div>
+					<div class="col-md-6">
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '31'}" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<f:cObject typoscriptObjectPath="lib.liens_directs" />
+				<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '2'}" />			
+			</div>           				
+        </div>
+		<div class="row">
+			<div class="col-md-8">
+				<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '1'}" />
+			</div>
+			<div class="col-md-4">
+				<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3'}" />
+			</div>              
+        </div>
+<f:render partial="Structure/Footer" arguments="{_all}"/>
+    </div>
+</f:section>

@@ -1,0 +1,21 @@
+<div class="footer-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<f:cObject typoscriptObjectPath="lib.footer"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="meta-section">
+	<div class="container">
+		<div class="row">
+			<f:if condition="{themeCopyright}">
+				<div class="col-md-4 copyright">
+					<f:format.html>{themeCopyrightText}</f:format.html>
+				</div>
+			</f:if>
+		</div>
+	</div>
+</div>
