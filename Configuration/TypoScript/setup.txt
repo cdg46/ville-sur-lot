@@ -16,9 +16,13 @@ lib.liens_directs = HMENU
 lib.liens_directs.special = directory
 lib.liens_directs.special.value = {$page.menu.liensdirects}
 lib.liens_directs.1 = TMENU
+lib.liens_directs.1.noBlur=1
+lib.liens_directs.1.wrap = <div class="well"><ul class="nav nav-stacked"><li class="nav-header">Navigation</li>|</ul></div>
 lib.liens_directs.1.NO = 1
 lib.liens_directs.1.NO.allWrap = <li>|</li>
 lib.liens_directs.1.NO.allWrap.insertData = 1
+
+
 
 ###FOOTER###
 lib.footer >
