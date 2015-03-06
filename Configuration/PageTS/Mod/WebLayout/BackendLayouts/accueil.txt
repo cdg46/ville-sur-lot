@@ -4,7 +4,7 @@
 mod {
 	web_layout {
 		BackendLayouts {
-			accueil{
+			index{
 				title = accueil
 				config {
 					backend_layout {
