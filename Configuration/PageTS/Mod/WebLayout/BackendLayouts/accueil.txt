@@ -8,15 +8,15 @@ mod {
 				title = accueil
 				config {
 					backend_layout {
-						colCount = 2
-						rowCount = 3
+						colCount = 6
+						rowCount = 4
 						rows {
 							1 {
 								columns {
 									1 {
 										name = news_slider
 										colPos = 4
-										colspan = 2
+										colspan = 6
 									}
 								}
 							}
@@ -25,12 +25,13 @@ mod {
 									1 {
 										name = content
 										colPos = 0
-										colspan = 2
+										colspan = 4
 									}
 									2 {
 										name = colD
 										colPos = 2
-										colspan = 1
+										colspan = 2
+										rowspan = 2
 									}
 								}
 							}
@@ -53,12 +54,12 @@ mod {
 									1 {
 										name = contact
 										colPos = 1
-										colspan = 2
+										colspan = 4
 									}
 									2 {
 										name = partenaires
 										colPos = 3
-										colspan = 1
+										colspan = 2
 									}
 								}
 							}
