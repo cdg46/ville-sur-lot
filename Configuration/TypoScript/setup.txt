@@ -24,6 +24,10 @@ lib.liens_directs.1.NO.allWrap.insertData = 1
 
 
 
+###FOOTER_MENU###
+lib.footer_menu > plugin.tx_msfootermenu.pi1
+
+
 ###FOOTER###
 lib.footer >
 lib.footer = HMENU
