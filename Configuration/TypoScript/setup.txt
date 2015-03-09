@@ -1,15 +1,4 @@
-####BANNER IMAGE####
-lib.banner.image=IMG_RESOURCE
-lib.banner.image {
-  file {
-    import = {$plugin.tx_banner.backgroundImage.path}|
-    import.data = levelmedia: -1, slide
-    treatIdAsReference = 1
-    import.listNum = 0
-  }
-  width={$plugin.tx_banner.width}
-  height={$plugin.tx_banner.height}
-}
+
 
 ###LIENS DIRECTS###
 lib.liens_directs = HMENU
