@@ -2,9 +2,7 @@
 	<f:link.page class="sr-only sr-only-focusable" section="content">
 		{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}
 	</f:link.page>
-	<!--<f:if condition="{headerImage}">-->
 		<f:cObject typoscriptObjectPath="lib.banner.image"/>
-	<!--</f:if>-->
 	<f:if condition="{showHeader}">
 		<f:render partial="Navigation/Main" arguments="{_all}"/>
 		<f:cObject typoscriptObjectPath="lib.navigation.breadcrumb"/>
