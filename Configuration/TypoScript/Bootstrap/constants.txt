@@ -1,0 +1,17 @@
+plugin.bootstrap_package {
+	settings {
+		less {
+			gray-base       = #8abc73
+			body-bg         = @gray-base
+			text-color      = #333
+			font-size-base  = 14px
+			font-size-large = ceil((@font-size-base * 1.25))
+			font-size-small = ceil((@font-size-base * 0.85))
+			font-size-h1    = floor((@font-size-base * 2))
+			font-size-h2    = floor((@font-size-base * 1.8))
+			font-size-h3    = ceil((@font-size-base * 1.7))
+			font-size-h4    = ceil((@font-size-base * 1.25))
+			font-size-h5    = @font-size-base
+		}
+	}
+}

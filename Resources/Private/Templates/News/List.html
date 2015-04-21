@@ -1,0 +1,55 @@
+{namespace n=Tx_News_ViewHelpers}
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/News/List.html
+-->
+
+<f:section name="content">
+        <f:if condition="{news}">
+                <f:then>
+                        <div id="carousel-{uniqueDivId}"
+				class="carousel slide"
+				data-interval="{data.pi_flexform.interval}"
+				data-wrap="{data.pi_flexform.wrap}"
+				data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<f:for each="{news}" as="newsItem" iteration="iteration">
+						<li data-target="#carousel-{data.uid}" data-slide-to="{newsItem.index}" {f:if(condition: iteration.isFirst,then:' class="active"')}></li>
+					</f:for>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<f:for each="{news}" as="newsItem" iteration="iteration">
+						<div
+                                                	class="item{f:if(condition: iteration.isFirst,then:' active')} carousel-item-type carousel-item-type-{item.item_type}"
+                                                	data-itemno="{iteration.index}">
+
+							<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+
+                                        	</div>
+					</f:for>
+				</div>
+
+				<f:link.page class="left carousel-control" additionalAttributes="{data-slide: 'prev', role: 'button'}" 
+                                                         section="carousel-{data.uid}">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">{f:translate(key: 'previous', extensionName: 'bootstrap_package')}</span>
+                                </f:link.page>
+                                <f:link.page class="right carousel-control" additionalAttributes="{data-slide: 'next', role: 'button'}"
+                                                         section="carousel-{data.uid}">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">{f:translate(key: 'next', extensionName: 'bootstrap_package')}</span>
+                                </f:link.page>
+                        </div>
+                </f:then>
+                <f:else>
+                        <div class="no-news-found">
+                                <f:translate key="list_nonewsfound" />
+                        </div>
+                </f:else>
+        </f:if>
+</f:section>
+

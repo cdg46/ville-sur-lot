@@ -4,16 +4,9 @@ if (!defined('TYPO3_MODE')) {
 }
 
 
-/***************
- * Make the extension configuration accessible
- */
-if (!is_array($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY])) {
-	$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY] = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
-}
-
 
 
 /***************
  * Theme Ville sur Lot TypoScript Setup
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/', 'Theme Ville sur Lot');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/', 'ville-sur-lot');
